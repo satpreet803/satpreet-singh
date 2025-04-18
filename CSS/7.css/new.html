@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapped{
+            position: relative;
+        }
+
+        .main{
+            height: 300px;
+            width: 300px;
+            background-color: blue;
+            position: relative;
+            z-index: 2;
+        }
+        .inside{
+            height: 200px;
+            left: 50px;
+            top: 2em;
+            width: 200px;
+            background-color: red;
+            position: absolute;
+            z-index: ;
+        }
+        .deep{
+            height: 100px;
+            width: 100px;
+            left: 50px;
+            top: 3em;
+            background-color: green;
+            position: absolute;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapped">
+
+        <div class="main">
+            <div class="inside">
+                <div class="deep"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
